@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Portfolio site for Ludovico7",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "pnpm --filter @portfolio/client dev",
+    "dev:server": "pnpm --filter @portfolio/server start:dev",
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "build:client": "pnpm --filter @portfolio/client build",
+    "build:server": "pnpm --filter @portfolio/server build",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0"
+  }
+}
